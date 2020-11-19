@@ -1,0 +1,36 @@
+{
+    "name": "riven/responder",
+    "description": "API JSON Responder",
+    "keywords": ["response","JSON格式化","出参"],
+    "type": "1",
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "php": ">=5.5.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "riven",
+            "email": "riven_meng@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "riven\\Responder\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "riven\\Responder\\\\ResponderServiceProvider"
+            ],
+            "aliases": {
+                "Responder": "riven\\Responder\\Facades\\Responder"
+            }
+
+        }
+    }
+}
